@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">DobbelSpel</string>
-    <string name="dicemain">diceMain</string>
-    <string name="welcome_text">Welcome to Yamb Dice!</string>
+    <string name="diceMain">diceMain</string>
+    <string name="welcomeText">Welcome to Yamb Dice!</string>
+    <string name="newGameButton">New Game</string>
+    <string name="settingsButton">Settings</string>
+    <string name="rulesButton">Rules</string>
+
 </resources>
