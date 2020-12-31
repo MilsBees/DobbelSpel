@@ -10,13 +10,17 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
+                android:name=".RulesActivity"
+                android:label="@string/rulesButton">
+        </activity>
+        <activity
                 android:name=".GameActivity"
-                android:label="@string/title_activity_game"
+                android:label="@string/app_name"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-                android:name=".SettingsActivity"
-                android:label="@string/title_activity_settings">
+                android:name=".HighScoresActivity"
+                android:label="@string/highScoresButton">
         </activity>
         <activity android:name=".WelcomeScreen">
             <intent-filter>

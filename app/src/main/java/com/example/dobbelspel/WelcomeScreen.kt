@@ -3,7 +3,6 @@ package com.example.dobbelspel
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 
 class WelcomeScreen : AppCompatActivity() {
@@ -14,6 +13,16 @@ class WelcomeScreen : AppCompatActivity() {
         val btnNewGame = findViewById<Button>(R.id.btnNewGame) as Button
         btnNewGame.setOnClickListener {
             startActivity(Intent(this@WelcomeScreen, GameActivity::class.java))
+        }
+
+        val btnRules = findViewById<Button>(R.id.btnRules) as Button
+        btnRules.setOnClickListener {
+            startActivity(Intent(this@WelcomeScreen, RulesActivity::class.java))
+        }
+
+        val btnHighScores = findViewById<Button>(R.id.btnHighScores) as Button
+        btnHighScores.setOnClickListener {
+            startActivity(Intent(this@WelcomeScreen, HighScoresActivity::class.java))
         }
     }
 }
