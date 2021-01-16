@@ -7,4 +7,90 @@
         android:layout_height="match_parent"
         tools:context=".RulesActivity">
 
+    <TextView
+            android:text="@string/titleObject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/tbxObject"
+            android:layout_marginEnd="178dp" android:layout_marginRight="178dp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="30dp" android:layout_marginStart="30dp"
+            android:paddingLeft="10dp" android:paddingTop="10dp"
+            android:paddingRight="10dp" android:paddingBottom="10dp" android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="15dp"/>
+    <TextView
+            android:text="@string/textObject"
+            android:layout_width="344dp"
+            android:layout_height="119dp" android:id="@+id/txtObject"
+            android:layout_marginEnd="178dp" android:layout_marginRight="178dp"
+            android:fontFamily="sans-serif-black"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="30dp" android:layout_marginStart="30dp"
+            android:paddingLeft="10dp" android:paddingTop="10dp"
+            android:paddingRight="10dp" android:paddingBottom="10dp" android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" app:layout_constraintHorizontal_bias="0.067"
+            app:layout_constraintTop_toBottomOf="@id/tbxObject" android:layout_marginTop="5dp"/>
+
+    <TextView
+            android:text="@string/titleSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/tbxSummary"
+            android:layout_marginEnd="178dp" android:layout_marginRight="178dp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="30dp" android:layout_marginStart="30dp"
+            android:paddingLeft="10dp" android:paddingTop="10dp"
+            android:paddingRight="10dp" android:paddingBottom="10dp" android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintTop_toBottomOf="@id/txtObject" android:layout_marginTop="5dp"/>
+
+    <TextView
+            android:text="@string/textSummary"
+            android:layout_width="344dp"
+            android:layout_height="119dp" android:id="@+id/txtSummary"
+            android:layout_marginEnd="178dp" android:layout_marginRight="178dp"
+            android:fontFamily="sans-serif-black"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="30dp" android:layout_marginStart="30dp"
+            android:paddingLeft="10dp" android:paddingTop="10dp"
+            android:paddingRight="10dp" android:paddingBottom="10dp" android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" app:layout_constraintHorizontal_bias="0.067"
+            app:layout_constraintTop_toBottomOf="@id/tbxSummary" android:layout_marginTop="5dp"/>
+
+    <TextView
+            android:text="@string/titleScoring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/tbxScoring"
+            android:layout_marginEnd="178dp" android:layout_marginRight="178dp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="30dp" android:layout_marginStart="30dp"
+            android:paddingLeft="10dp" android:paddingTop="10dp"
+            android:paddingRight="10dp" android:paddingBottom="10dp" android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintTop_toBottomOf="@id/txtSummary" android:layout_marginTop="5dp"/>
+
+    <TextView
+            android:text="@string/textScoring"
+            android:layout_width="344dp"
+            android:layout_height="119dp" android:id="@+id/txtScoring"
+            android:layout_marginEnd="178dp" android:layout_marginRight="178dp"
+            android:fontFamily="sans-serif-black"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="30dp" android:layout_marginStart="30dp"
+            android:paddingLeft="10dp" android:paddingTop="10dp"
+            android:paddingRight="10dp" android:paddingBottom="10dp" android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" app:layout_constraintHorizontal_bias="0.067"
+            app:layout_constraintTop_toBottomOf="@id/tbxScoring" android:layout_marginTop="5dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
