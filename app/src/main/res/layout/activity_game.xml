@@ -1,34 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".GameActivity">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:weightSum="0.25"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:paddingLeft="16dp"
+                                                   android:paddingRight="16dp"
+                                                   tools:context=".GameActivity" android:id="@+id/linearLayout">
 
-    <com.google.android.material.appbar.AppBarLayout
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:theme="@style/AppTheme.AppBarOverlay">
+    <ImageButton
+            android:layout_width="62dp"
+            android:layout_height="64dp" tools:srcCompat="@tools:sample/avatars"
+            android:id="@+id/imageView12" android:contentDescription="@string/dice1"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/imageView13" android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"/>
+    <ImageButton
+            android:layout_width="62dp"
+            android:layout_height="64dp" tools:srcCompat="@tools:sample/avatars"
+            android:id="@+id/imageView13" android:contentDescription="@string/dice1"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView12"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/imageView14"/>
+    <ImageButton
+            android:layout_width="62dp"
+            android:layout_height="64dp" tools:srcCompat="@tools:sample/avatars"
+            android:id="@+id/imageView14" android:contentDescription="@string/dice1"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView13"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/imageView15"/>
+    <ImageButton
+            android:layout_width="62dp"
+            android:layout_height="64dp" tools:srcCompat="@tools:sample/avatars"
+            android:id="@+id/imageView15" android:contentDescription="@string/dice1"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView14"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/imageView16"/>
+    <ImageButton
+            android:layout_width="62dp"
+            android:layout_height="64dp" tools:srcCompat="@tools:sample/avatars"
+            android:id="@+id/imageView16" android:contentDescription="@string/dice1"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView15"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="15dp" android:layout_marginEnd="15dp"/>
 
-        <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
-                app:popupTheme="@style/AppTheme.PopupOverlay"/>
-
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <include layout="@layout/content_game"/>
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="434dp"
+            android:layout_height="66dp"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <include layout="@layout/content_game"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content" android:id="@+id/include"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+    />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_margin="@dimen/fab_margin"
-            app:srcCompat="@drawable/dice"/>
+            app:srcCompat="@drawable/dice"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+    />
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
