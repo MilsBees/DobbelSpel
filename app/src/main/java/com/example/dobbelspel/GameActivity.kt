@@ -13,10 +13,9 @@ class GameActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
-        setSupportActionBar(findViewById(R.id.toolbar))
 
         findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
-            Snackbar.make(view, "You rolled a ${rollDice()}", Snackbar.LENGTH_INDEFINITE)
+            Snackbar.make(view, "You rolled a ${rollDice()}", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
     }

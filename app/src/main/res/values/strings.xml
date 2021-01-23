@@ -16,5 +16,9 @@
     <string name="textTurn">On your turn, you may roll the dice up to 3 times, although you may stop and score after your first or second roll. To roll the dice, just press the Roll button next to the dices. First roll: Roll all 5 dice. Click on a die to hold its result. You may stop and score now, or roll again. Second roll: Reroll ANY or ALL dice you want — even held dice from the previous roll. You don\'t need to declare which combination you\'re rolling for; you may change your mind after any roll. You may stop and score after your second roll, or set aside any dice to hold and roll a third time. Third and final roll: Reroll ANY or ALL dice you want. After your third roll, you must fill in a box on your score card with a score or a zero. After you fill in a box, your turn is over. The only exception to these rules are if you want to fill the "Single" column. To fill something in this column, you must stop rolling after the first roll.</string>
     <string name="textScoring">When you are finished rolling, decide which box to fill in on your score card. For each game, there are 4 columns with 12 boxes/categories. You must fill in a box on each turn; if you can\'t (or don\'t want to) enter a score, you must enter a zero. Fill in each box only once, in any order allowed by the rules of the column. The scoring by categories and columns are described below.</string>
     <string name="dice1">Dice1</string>
+    <string name="dice3">dice3</string>
+    <string name="dice4">dice4</string>
+    <string name="dice2">dice2</string>
+    <string name="dice5">dice5</string>
 
 </resources>
