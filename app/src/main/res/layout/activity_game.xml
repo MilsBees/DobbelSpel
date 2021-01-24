@@ -26,35 +26,35 @@
             android:layout_marginBottom="15dp" android:layout_marginRight="2dp" android:layout_marginEnd="2dp"/>
     <ImageView
             android:layout_width="64dp"
-            android:layout_height="64dp" app:srcCompat="@drawable/dice_1" android:id="@+id/imageView18"
+            android:layout_height="64dp" app:srcCompat="@drawable/dice_six_faces_one" android:id="@+id/imageViewDice1"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="7dp" android:layout_marginStart="7dp" app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="15dp" app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toStartOf="@+id/imageView19" android:contentDescription="@string/dice1"/>
+            app:layout_constraintEnd_toStartOf="@+id/imageViewDice2" android:contentDescription="@string/dice1"/>
     <ImageView
             android:layout_width="64dp"
-            android:layout_height="64dp" app:srcCompat="@drawable/dice_2" android:id="@+id/imageView19"
-            app:layout_constraintStart_toEndOf="@+id/imageView18" app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toStartOf="@+id/imageView20" app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="64dp" app:srcCompat="@drawable/dice_six_faces_two" android:id="@+id/imageViewDice2"
+            app:layout_constraintStart_toEndOf="@+id/imageViewDice1" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewDice3" app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="15dp" android:contentDescription="@string/dice2"/>
     <ImageView
             android:layout_width="64dp"
-            android:layout_height="64dp" app:srcCompat="@drawable/dice_3" android:id="@+id/imageView20"
-            app:layout_constraintStart_toEndOf="@+id/imageView19" app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toStartOf="@+id/imageView21" app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="64dp" app:srcCompat="@drawable/dice_six_faces_three" android:id="@+id/imageViewDice3"
+            app:layout_constraintStart_toEndOf="@+id/imageViewDice2" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewDice4" app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="15dp" android:contentDescription="@string/dice3"/>
     <ImageView
             android:layout_width="64dp"
-            android:layout_height="64dp" app:srcCompat="@drawable/dice_4" android:id="@+id/imageView21"
-            app:layout_constraintStart_toEndOf="@+id/imageView20" app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toStartOf="@+id/imageView22" app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="64dp" app:srcCompat="@drawable/dice_six_faces_four" android:id="@+id/imageViewDice4"
+            app:layout_constraintStart_toEndOf="@+id/imageViewDice3" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewDice5" app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="15dp" android:contentDescription="@string/dice4"/>
     <ImageView
             android:layout_width="64dp"
-            android:layout_height="64dp" app:srcCompat="@drawable/dice_5" android:id="@+id/imageView22"
+            android:layout_height="64dp" app:srcCompat="@drawable/dice_six_faces_five" android:id="@+id/imageViewDice5"
             android:layout_marginEnd="7dp" android:layout_marginRight="7dp"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="15dp" app:layout_constraintStart_toEndOf="@+id/imageView21"
+            android:layout_marginTop="15dp" app:layout_constraintStart_toEndOf="@+id/imageViewDice4"
             app:layout_constraintHorizontal_bias="0.5" android:contentDescription="@string/dice5"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
