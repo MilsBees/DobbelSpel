@@ -1,13 +1,9 @@
 package com.example.dobbelspel
 
-import android.graphics.Color
 import android.os.Bundle
 import android.widget.ImageView
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
-import org.w3c.dom.Text
 
 class GameActivity : AppCompatActivity() {
 
@@ -24,9 +20,11 @@ class GameActivity : AppCompatActivity() {
     }
 
     private fun rollDice() {
-        val dice = Dice(6)
-        val diceRoll = dice.roll()
+        //Create a six sided die and roll it
+            val dice = Dice(6)
+            val diceRoll = dice.roll()
 
+        //Update the dice image to match the rolled number
         val diceImage: ImageView = findViewById(R.id.imageViewDice1)
         val drawableResource = when (diceRoll) {
             1 -> (R.drawable.dice_six_faces_one)
@@ -37,10 +35,11 @@ class GameActivity : AppCompatActivity() {
             else -> (R.drawable.dice_six_faces_six)
         }
         diceImage.setImageResource(drawableResource)
+        //Also change the content description to match the roll
         diceImage.contentDescription = diceRoll.toString()
     }
 
-    class Dice(private val numSides: Int) {
+    data class Dice(private val numSides: Int) {
 
         fun roll(): Int {
             return (1..numSides).random()
